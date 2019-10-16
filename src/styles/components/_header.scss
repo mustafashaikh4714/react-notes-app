@@ -1,0 +1,18 @@
+.header {
+  margin: 0;
+  background-color: #336b87;
+  color: #fff;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 2rem;
+  font-size: 1.6rem;
+}
+
+.header__subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+}
