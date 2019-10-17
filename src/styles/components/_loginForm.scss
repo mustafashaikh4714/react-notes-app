@@ -1,0 +1,15 @@
+.l-form-container {
+  width: 40vw;
+  background-color: #fff;
+  padding: 1.5rem !important;
+  border: 1px solid black;
+
+  &__label {
+    font-size: 1rem;
+  }
+  &__login-btn {
+    margin-top: 1rem;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
