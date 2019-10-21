@@ -1,7 +1,10 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
+import { withRouter } from 'react-router-dom'
 // import BackgroundImage from '../../static/images/ben-white-ReEqHw2GyeI-unsplash.jpg'
-const LandingPage = () => {
+const LandingPage = props => {
+  // console.log(props)
+
   return (
     <div
       className="l-page"
@@ -17,9 +20,14 @@ const LandingPage = () => {
         <p className="l-page__header--subtitle">
           Stay faithful to the stories in your mind.
         </p>
-        <Button className="l-page__header--btn">Get Started</Button>
+        <Button
+          className="l-page__header--btn"
+          onClick={() => props.history.push('/home')}
+        >
+          Get Started
+        </Button>
       </div>
     </div>
   )
 }
-export default LandingPage
+export default withRouter(LandingPage)

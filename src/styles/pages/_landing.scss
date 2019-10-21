@@ -5,14 +5,11 @@
   background-position: bottom !important;
 
   &__header {
-    // display: flex;
-    // flex-direction: column;
     position: fixed;
     top: 65%;
     left: 70%;
     transform: translate(-50%, -50%);
     color: #fff;
-    // text-align: center;
 
     &--title {
       margin: 0rem !important;
@@ -20,13 +17,20 @@
     }
     &--subtitle {
       margin-bottom: 0.8rem !important;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-weight: 500;
     }
     &--btn {
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
+      padding: 0.6rem 1.5rem;
+      font-size: 1.1rem;
       border-radius: 50rem;
+    }
+    &--btn:active,
+    :hover,
+    :focus {
+      border: none;
+      outline: none;
+      box-shadow: none !important;
     }
   }
 }
