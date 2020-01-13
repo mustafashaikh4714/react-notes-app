@@ -3,13 +3,13 @@ const jwt = require('jsonwebtoken')
 const authenticate = (req, res, done) => {
   const token = req.headers.authorization
 
-  let id = null
+  let user = null
   try {
-    id = jwt.verify(token, process.env.SECRET_KEY).id
+    user = jwt.verify(token, process.env.SECRET_KEY).user
   } catch (e) {
     return res.status(401).send(e.message)
   }
-  req.id = id
+  req.user = user
   done()
 }
 

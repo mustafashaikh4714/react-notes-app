@@ -1,6 +1,7 @@
 import bcrypt from 'bcryptjs'
 import validator from 'validator'
 import User from '../models/user'
+import genToken from '../utils/genToken'
 export default app => {
   app.post('/register/user', async (req, res) => {
     const { username, email, password } = req.body
@@ -39,6 +40,15 @@ export default app => {
         .status(400)
         .send({ message: 'Invalid Password. Please try again.' })
 
-    res.send({ success: true, message: 'User login successfully.' })
+    const data = {
+      userId: user._id,
+      email: user.email
+    }
+
+    res.send({
+      success: true,
+      message: 'User login successfully.',
+      token: genToken(data)
+    })
   })
 }

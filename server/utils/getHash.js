@@ -1,2 +1,2 @@
-const bcrypt = require('bcryptjs')
-module.exports = (password) => bcrypt.hash(password, 10)
+import bcrypt from 'bcryptjs'
+export default password => bcrypt.hash(password, 10)
