@@ -18,7 +18,7 @@
     "cors": "^2.8.5",
     "env-cmd": "^10.0.1",
     "esm": "^3.2.25",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "jsonwebtoken": "^8.4.0",
     "mongoose": "^5.4.8",
     "validator": "^10.11.0"
