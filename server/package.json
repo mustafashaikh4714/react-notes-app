@@ -19,7 +19,7 @@
     "env-cmd": "^10.0.1",
     "esm": "^3.2.25",
     "express": "^4.16.4",
-    "jsonwebtoken": "^8.4.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.4.8",
     "validator": "^10.11.0"
   }
